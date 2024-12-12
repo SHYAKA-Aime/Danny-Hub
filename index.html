@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(180deg, #000000, #1a1a1a); /* Corrected background gradient */
+            background: -webkit-linear-gradient(180deg, #000000, #1a1a1a); /* Webkit compatibility */
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0px; /* Small space between logo and tagline */
+            margin-bottom: 80px; /* Increased space between header and buttons */
+        }
+
+        .logo img {
+            width: 200px; /* Increased logo size */
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+            max-width: 300px; /* Ensures consistent button width */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 0;
+            border: 2px solid white;
+            border-radius: 5px;
+            background: none;
+            color: white;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: white;
+            color: black;
+        }
+
+        .footer {
+            margin-top: 50px;
+        }
+
+        .footer .highlight {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .footer .subtext {
+            font-size: 1.0rem;
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="tagline">Empower | Educate | Elevate | Empower</div>
+        </div>
+        <div class="buttons">
+            <a href="https://docs.google.com/forms/d/1U4yzCgYi2_2G09c3HR-8L3lztlEVl4NO5Hs05tzlgR0/edit" class="button" target="_blank">Fuel Our Vision</a>
+            <a href="https://docs.google.com/document/d/1GhYgxpvItmoU9wklpTtwjq2J64BXoWWqsTBOdo5RWdM/edit?tab=t.0" class="button" target="_blank">Design Challenge</a>
+            <a href="#" class="button">Our Topics</a>
+        </div>
+        <div class="footer">
+            <div class="subtext">"Shape the Future of the Built Environment:</div>
+            <div class="highlight">Mentor, Share, Inspire."</div>
+        </div>
+    </div>
+</body>
+</html>
